@@ -1,0 +1,343 @@
+#Banner{
+width: 75%;
+height: 80px;
+position: fixed;
+z-index: 10;
+top: 10px;
+left: 171px;
+background-attachment: fixed;
+background-color: rgb(54, 50, 38);
+background: transparent;
+border-radius: 20px;
+
+box-shadow:
+ 0 0 50px #ff2020, 
+ 0 0 50px rgb(248, 89, 89),
+ 0 0 20px rgb(255, 255, 255);
+}
+
+#LeftSideBanner{
+    width: 137px;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(rgb(141, 70, 70), rgb(212, 73, 73), rgb(141, 70, 70));
+    background-attachment: fixed;
+
+    box-shadow:
+    0 0 15px #462a2a, 
+    0 0 15px rgb(255, 79, 79),
+    0 0 15px rgb(255, 55, 55);
+}
+
+#RightSideBanner{
+    width: 137px;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(rgb(141, 70, 70), rgb(212, 73, 73), rgb(141, 70, 70));
+    background-attachment: fixed;
+
+    box-shadow:
+    0 0 15px #462a2a, 
+    0 0 15px rgb(255, 79, 79),
+    0 0 15px rgb(255, 55, 55);
+}
+
+#SubBanner{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    background: transparent;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 137px;
+    z-index: 1;
+}
+
+.TextHeader{
+    z-index: 1;
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+    position: relative;
+    width: 700px;
+    color: white;
+    cursor: default;
+    transition: 0.7s ease;
+}
+
+.TextHeader:hover{
+    transform: scale(1.1);
+}
+
+.PeaksTitle{
+    z-index: 2;
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+    position: relative;
+    width: 220px;
+    color: rgb(255, 255, 255, 0);
+    cursor:default;
+    transition: transform 0.35s linear, color 250ms ease, text-shadow 300ms linear;
+    border-radius: 10px;
+    background-color: rgba(178, 196, 81, 0.5);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    box-shadow:
+    0 0 50px #ffffff, 
+    0 0 50px rgb(248, 89, 89),
+    0 0 20px rgb(255, 0, 0);
+}
+
+.PeakType{
+    z-index: 2;
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: -11px;
+    width: 200px;
+    color: rgb(255, 224, 167, 1);
+    cursor:default;
+    transition: all 250ms linear;
+    border-radius: 10px;
+    background-color: rgb(204, 134, 80, 1);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    text-shadow:     
+    0 0 10px #e94141, 
+    0 0 20px rgb(255, 89, 89),
+    0 0 10px rgb(228, 169, 91),
+    0 0 20px rgb(255, 255, 255);
+
+    box-shadow:
+    0 0 50px #ffffff, 
+    0 0 50px rgb(248, 89, 89),
+    0 0 20px rgb(255, 0, 0);
+}
+
+.TierText{
+    z-index: 2;
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor:pointer;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow:
+    0 0 30px #ff2020, 
+    0 0 30px rgb(248, 89, 89),
+    0 0 20px rgb(255, 255, 255);
+}
+
+#BannerButton{
+    background: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: none;
+    position: fixed;
+    top:1px;
+    cursor: pointer;
+    z-index: 11;
+}   
+
+.BannerText{
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-size:30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    text-shadow: 
+    0 0 20px rgb(180, 45, 45),
+    0 0 30px rgb(224, 104, 34),
+    0 0 40px #e25d28,
+    0 0 50px red;
+}
+
+.container{
+    position: fixed;
+    height: 75px;
+    width: 105px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    z-index: 11;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    z-index: -10;
+    filter: blur(0);
+  }
+  
+  .container:hover::before {
+    background: linear-gradient(rgb(180, 45, 45),  rgb(189, 79, 36), #e25d28);
+    filter: blur(1.2em);
+  }
+  .container:active::before {
+    filter: blur(0.5em);
+  }  
+
+#SocialButton{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    z-index: 4;
+    background: transparent;
+    border: 1px solid rgb(165, 78, 78);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 0;
+    cursor: pointer;
+    transition: all 500ms ease;
+
+    box-shadow:
+    0 0 40px #ff2020, 
+    0 0 40px rgb(248, 89, 89),
+    0 0 20px rgb(255, 255, 255);
+}
+
+#SocialIcon{
+    width: 40px;
+}
+
+.SocialTitle{
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    z-index: 4;
+    color: rgba(255, 255, 255, 0);
+    transition: all 250ms ease-in;
+}
+
+.SocialTitleNormal{
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    z-index: 4;
+    color: rgba(255, 255, 255, 1);
+
+    text-shadow:     
+    0 0 20px rgb(180, 45, 45),
+    0 0 30px rgb(224, 104, 34),
+    0 0 20px #e25d28,
+    0 0 30px red;
+}
+
+.SocialButtonUpScale:hover{
+    transform: scale(1.1) translateY(-15px);
+}
+
+#SocialButton:hover + .SocialTitle{
+    color: rgba(255, 255, 255, 1);
+
+    text-shadow:     
+    0 0 20px rgb(180, 45, 45),
+    0 0 30px rgb(224, 104, 34),
+    0 0 20px #e25d28,
+    0 0 30px red;
+}
+
+#Card{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+.AuthorPeaksTitle{
+    font-family: Arial, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 2;
+    color: rgba(255, 255, 255);
+    background-color: rgb(204, 134, 80, 1);
+    border-radius: 15px;
+    text-align: center;
+    cursor: default;
+    width: 100px;
+
+    text-shadow:     
+    0 0 20px rgb(180, 45, 45),
+    0 0 20px rgb(224, 104, 34),
+    0 0 20px #e25d28,
+    0 0 20px red;
+}
+
+.ScaleUp:hover + .PeaksTitle{
+    transform: scale(1.1);
+    color: rgb(255, 224, 167, 1);
+    display: block;
+
+    text-shadow:
+    0 0 10px #e94141, 
+    0 0 20px rgb(255, 89, 89),
+    0 0 10px rgb(228, 169, 91),
+    0 0 20px rgb(255, 255, 255);
+
+    .PeakType{
+        color: rgb(255, 224, 167, 0);
+        display: none;
+    }
+}
+
+.TranslateYUp:hover + .PeaksTitle{
+    transform: scale(1.1);
+    transform: translateY(-9px);
+    color: rgb(255, 224, 167, 1);
+
+    text-shadow:
+    0 0 10px #ff2020, 
+    0 0 20px rgb(248, 89, 89),
+    0 0 10px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255);
+
+    .PeakType{
+        color: rgb(255, 224, 167, 0);
+        display: none;
+    }
+}
+
+
+@media(max-width:1260px){
+    #Banner{
+        position: fixed;
+        top: 10px;
+        right: 0;
+        width: 500px;
+        height: 70px;
+    }  
+    .BannerText{
+        position: fixed;
+    }
+}
+
+body{
+    margin-top: 300px;
+    background: linear-gradient(rgb(218, 38, 38), rgba(255, 0, 43, 0.452));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: transparent;
+}
+
